@@ -16,7 +16,7 @@ Now use the Paint tool to create a new sprite shaped like a flower petal.
 
 Click on **Paint new sprite** and rename it 'Flower'.
 
-[[[generic-scratch-rename-sprite]]]
+[[[generic-scratch-draw-sprite]]]
 
 --- /task ---
 
