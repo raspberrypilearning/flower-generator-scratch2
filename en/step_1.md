@@ -1,58 +1,75 @@
+--- no-print ---
+
+This is the **Scratch 2** version of the project. There is also a [Scratch 3 version of the project](https://projects.raspberrypi.org/en/projects/flower-generator).
+
+--- /no-print ---
+
 ## Introduction
 
-Add project description here. What will learners be making?
+You will create hundreds of flowers of different sizes, shapes, and colours. 
+
+You can export the flower pictures and use them as wallpapers on your phone or computer, or as backdrops in other Scratch projects. 
 
 ### What you will make
 
 --- no-print ---
-Add instructions for using the embedded content here.
+
+Press `f` to draw a few flowers, or `r` to draw lots of random flowers, or `p` to draw a flower pattern.
 
 <div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/253355932/?autostart=false" frameborder="0"></iframe>
 </div>
+
 --- /no-print ---
 
 --- print-only ---
-![Complete project](images/showcase_static.png)
+
+![random flowers](images/flower-random.png)
+
 --- /print-only ---
 
 --- collapse ---
+
 ---
 title: What you will need
 ---
+
 ### Hardware
 
-+ Describe hardware here
++ A computer capable of running Scratch 2.0
 
 ### Software
 
-+ Scratch 2.0 (either [online](http://rpf.io/scratchon) or [offline](http://rpf.io/scratchoff))
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ [rpf.io/project-name-go](http://rpf.io/project-name-go){:target="_blank"}
++ Scratch 2.0 (either [online](https://rpf.io/scratch-on) or [offline](https://rpf.io/scratch-off))
 
 --- /collapse ---
 
 --- collapse ---
+
 ---
 title: What you will learn
 ---
 
-+ Two or three learning objectives
-+ ...should go here
++ How to stamp a sprite 
++ How to make your own Scratch blocks
++ How to use block inputs 
++ How to create random numbers 
 
 --- /collapse ---
 
 --- collapse ---
+
 ---
-title: Additional information for educators
+title: Additional notes for educators
 ---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
+--- no-print ---
 
-[Here is a link to the resources for this project](http://rpf.io/project-name-go).
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/flower-generator-scratch2/print){:target="_blank"}.
+
+--- /no-print ---
+
+You can [find the solution to this project here](http://rpf.io/p/en/flower-generator-scratch2-get).
 
 --- /collapse ---
+
