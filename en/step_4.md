@@ -11,14 +11,7 @@ Change your 'draw flower' definition to change the colour:
 
 ![flower sprite](images/flower-sprite.png)
 
-```blocks
-define draw flower
-set [color v] effect to (150)
-repeat (6) 
-  stamp
-  turn cw (60) degrees
-end
-```
+![blocks_1545217521_7470374](images/blocks_1545217521_7470374.png)
 
 --- /task ---
 
@@ -68,27 +61,13 @@ Your code should look like this:
 
 ![flower sprite](images/flower-sprite.png)
 
-```blocks
-define draw flower (colour)
-set [color v] effect to (colour)
-repeat (6) 
-  stamp
-  turn cw (60) degrees
-end
-```
+![blocks_1545217522_843105](images/blocks_1545217522_843105.png)
  
 --- /task ---
 
 Notice that your `draw flower`{:class="blockmoreblocks"} blocks now have a new input that is set to `1`: 
 
-```blocks
-when green flag clicked
-clear
-go to x: (75) y: (75)
-draw flower (1) :: custom
-go to x: (-75) y: (-75)
-draw flower (1) :: custom
-``` 
+![blocks_1545217523_9471526](images/blocks_1545217523_9471526.png)
 
 --- task ---
 
@@ -98,14 +77,7 @@ Your code should look similar to this:
 
 ![flower sprite](images/flower-sprite.png)
 
-```blocks
-when green flag clicked
-clear
-go to x: (75) y: (75)
-draw flower (180) :: custom
-go to x: (-75) y: (-75)
-draw flower (150) :: custom
-```
+![blocks_1545217525_0871058](images/blocks_1545217525_0871058.png)
 
 --- /task ---
 
@@ -115,9 +87,7 @@ Now add another input to set the size of the flower, so your `draw flower`{:clas
 
 ![flower sprite](images/flower-sprite.png)
 
-```blocks
-draw flower (180) (150) :: custom
-```
+![blocks_1545217526_1675563](images/blocks_1545217526_1675563.png)
 
 With the block above, you can create flowers with different sizes:
 
@@ -137,9 +107,7 @@ Edit the `draw flower`{:class="blockmoreblocks"} block to add a new number input
 
 You need to add the following block with a 'size' input to the `draw flower`{:class="blockmoreblocks"} definition block:
 
-```blocks
-set size to (100) %
-```
+![blocks_1545217527_2752783](images/blocks_1545217527_2752783.png)
 
 --- /hint ---
 
@@ -151,15 +119,7 @@ Right-click on the `draw flower`{:class="blockmoreblocks"} definition block, cli
 
 Change your `define draw flower`{:class="blockmoreblocks"} script so it looks like this:
 
-```blocks
-define draw flower (colour) (size :: custom-arg)
-set [color v] effect to (colour)
-set size to (size :: custom-arg) %
-repeat (6) 
-  stamp
-  turn cw (60) degrees
-end
-```
+![blocks_1545217528_3481445](images/blocks_1545217528_3481445.png)
 
 --- /hint ---
 
@@ -169,14 +129,7 @@ end
 --- task ---
 In the `when green flag clicked`{:class="blockevents"} script, change the second number in both `draw flower`{:class="blockmoreblocks"} blocks so that the two flowers appear in different sizes.
 
-```blocks 
-when green flag clicked
-clear
-go to x: (75) y: (75)
-draw flower (180) (150) :: custom
-go to x: (-75) y: (-75)
-draw flower (150) (50) :: custom
-```
+![blocks_1545217529_4459913](images/blocks_1545217529_4459913.png)
 --- /task ---
 
 --- task ---
@@ -207,24 +160,15 @@ Change your `define draw flower`{:class="blockmoreblocks"} block to look like th
 
 ![flower sprite](images/flower-sprite.png)
 
-```blocks
-define draw flower (colour) (size :: custom-arg) (petals)
-```
+![blocks_1545217530_5382602](images/blocks_1545217530_5382602.png)
 
 Update your `repeat`{:class="blockcontrol"} and `turn`{:class="blocklooks"} blocks so they use the 'petals' input.
 
-```blocks
-repeat (petals) 
-end
-
-turn cw ((360) / (petals :: custom-arg)) degrees
-```
+![blocks_1545217531_6838334](images/blocks_1545217531_6838334.png)
 
 Update your `draw flower`{:class="blockmoreblocks"} blocks to use the 'petals' input.
 
-```blocks
-draw flower (150) (50) (8) :: custom
-```
+![blocks_1545217532_7756388](images/blocks_1545217532_7756388.png)
 
 --- /hint ---
 
@@ -236,27 +180,11 @@ Edit your `define draw flower`{:class="blockmoreblocks"} block and add a new num
 
 Your code should look like this:
 
-```blocks
-define draw flower (colour) (size :: custom-arg) (petals)
-set [color v] effect to (colour)
-set size to (size :: custom-arg) %
-repeat (petals) 
-  stamp
-  turn cw ((360) / (petals)) degrees
-end
-
-```
+![blocks_1545217533_9077253](images/blocks_1545217533_9077253.png)
 
 In the `when green flag clicked`{:class="blockevents"} script, change the third number in both `draw flower`{:class="blockmoreblocks"} blocks so that the two flowers that appear have different numbers of petals.
 
-```blocks
-when green flag clicked
-clear
-go to x: (75) y: (75)
-draw flower (180) (150) (3) :: custom
-go to x: (-75) y: (-75)
-draw flower (150) (50) (8) :: custom
-```
+![blocks_1545217535_1315215](images/blocks_1545217535_1315215.png)
 
 --- /hint ---
 
@@ -272,18 +200,9 @@ Now move your code for drawing flowers away from below the `when green flag clic
 
 ![flower sprite](images/flower-sprite.png)
 
-```blocks
-when green flag clicked
-```
+![blocks_1545217536_2824948](images/blocks_1545217536_2824948.png)
 
-```blocks
-when [f v] key pressed
-clear
-go to x: (75) y: (75)
-draw flower (180) (150) (3) :: custom
-go to x: (-75) y: (-75)
-draw flower (150) (50) (8) :: custom
-```
+![blocks_1545217537_3498707](images/blocks_1545217537_3498707.png)
 
 --- /task ---
 

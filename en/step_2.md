@@ -40,13 +40,7 @@ Add the following code to the Flower sprite to `stamp`{:class="blockpen"} a flow
 
 ![screenshot](images/flower-6-straight.png)
 
-```blocks
-when green flag clicked
-repeat (6) 
-  stamp
-  turn cw (60) degrees
-end
-```
+![blocks_1545217514_3198097](images/blocks_1545217514_3198097.png)
 
 --- /task ---
 
@@ -72,9 +66,7 @@ Before you run your code again, you should `clear`{:class="blockpen"} the Stage.
 
 Click on the `clear` block in the Pen tab.
 
-```blocks
-clear
-```
+![blocks_1545217516_2418602](images/blocks_1545217516_2418602.png)
 
 --- /task ---
 
