@@ -8,7 +8,13 @@ Create a flower or a combination of flowers that you like. Here's an example:
 
 ![flower sprite](images/flower-sprite.png)
 
-![blocks_1545217544_0587213](images/blocks_1545217544_0587213.png)
+```blocks
+when [p v] key pressed
+clear
+go to x: (-150) y: (100)
+draw flower (150) (80) (7) :: custom
+draw flower (130) (35) (20) :: custom
+```
 
 --- /task ---
 
@@ -26,7 +32,9 @@ Before you can create your pattern, you should clear the Stage of any leftover f
 
 Click on the `clear` block in the Pen tab.
 
-![blocks_1545217545_1838841](images/blocks_1545217545_1838841.png)
+```blocks
+clear
+```
 
 --- /task ---
 
@@ -42,7 +50,16 @@ Now draw a row of these flowers across the top of the Stage. Here is some exampl
 
 ![flower sprite](images/flower-sprite.png)
 
-![blocks_1545217546_2469552](images/blocks_1545217546_2469552.png)
+```blocks
+when [p v] key pressed
+clear
+go to x: (-150) y: (100)
+repeat (4) 
+  draw flower (150) (80) (7) :: custom
+  draw flower (130) (35) (20) :: custom
+  change x by (100)
+end
+```
 
 --- /task ---
 
@@ -60,7 +77,20 @@ Add another loop to create more rows of flowers. This example adds a `repeat 3`{
 
 ![flower sprite](images/flower-sprite.png)
 
-![blocks_1545217547_4083726](images/blocks_1545217547_4083726.png)
+```blocks
+when [p v] key pressed
+clear
+go to x: (-150) y: (100)
+repeat (3) 
+  repeat (4) 
+    draw flower (150) (80) (7) :: custom
+    draw flower (130) (35) (20) :: custom
+    change x by (100)
+  end
+  set x to (-150)
+  change y by (-100)
+end
+```
  
 --- /task ---
 
@@ -101,7 +131,10 @@ Now you can use the `set colour effect`{:class="blocklooks"} on the Stage to cha
 
 ![stage sprite](images/stage-sprite.png)
 
-![blocks_1545217548_5060186](images/blocks_1545217548_5060186.png)
+```blocks
+when [p v] key pressed
+set [color v] effect to (30)
+```
 
 --- /task ---
 
