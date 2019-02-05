@@ -14,7 +14,11 @@ Click on **More Blocks** and then on **Make a block** to create your own block c
 
 There is now a new block called `draw flower`{:class="blockmoreblocks"} in the **More blocks** section, and a new definition block on the Stage.
 
-![blocks_1545217517_3728974](images/blocks_1545217517_3728974.png)
+```blocks
+draw flower :: custom
+
+define draw flower
+```
 
 --- /task ---
 
@@ -26,7 +30,15 @@ Your code should look like this:
 
 ![flower sprite](images/flower-sprite.png)
 
-![blocks_1545217518_4662974](images/blocks_1545217518_4662974.png)
+```blocks
+define draw flower
+repeat (6) 
+  stamp
+  turn cw (60) degrees
+end
+
+when green flag clicked
+``` 
 
 --- /task ---
 
@@ -36,7 +48,11 @@ Add the following code to clear the Stage and to use your new `draw flower`{:cla
 
 ![flower sprite](images/flower-sprite.png)
 
-![blocks_1545217519_5613706](images/blocks_1545217519_5613706.png)
+```blocks
+when green flag clicked
+clear
+draw flower :: custom
+```
  
 --- /task ---
 
@@ -52,7 +68,14 @@ Now change your code to move the sprite and then draw another flower:
 
 ![flower sprite](images/flower-sprite.png)
 
-![blocks_1545217520_6427677](images/blocks_1545217520_6427677.png)
+```blocks
+when green flag clicked
+clear
+go to x: (75) y: (75)
+draw flower :: custom
+go to x: (-75) y: (-75)
+draw flower :: custom 
+```
 
 --- /task ---
 
